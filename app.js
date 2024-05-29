@@ -46,11 +46,11 @@ document.write("Score Of " + studentNames[2] + " is " + scores[2] + ". Percentag
 
 
 //Initialize array with color names
-let colors = ["red", "green", "blue"];
+ var colors = ["red", "green", "blue"];
 document.write("Colors:</h2> " + colors.join(", "));
 
 // (a)add colour in start
-let newColor = prompt("Enter a color to add to the beginning:");
+var newColor = prompt("Enter a color to add to the beginning:");
 colors.unshift(newColor);
 document.write("<h2>Updated Array:</h2> " + colors.join(", "));
 
@@ -79,7 +79,7 @@ document.write("<h2>Updated Array:</h2> " + colors.join(", "));
 
 // (g)  index  to delete colors name
 index = prompt("Enter the index to delete color(s) from:");
-let count = prompt("Enter the number of colors to delete:");
+var count = prompt("Enter the number of colors to delete:");
 colors.splice(index, count);
 document.write("<h2>Updated Array:</h2> " + colors.join(", "));
 
@@ -131,7 +131,7 @@ document.write("<h3>Out:</h3> "+ fifoArray[1]);
 document.write("<h3>Out:</h3> "+ fifoArray[0]);
 
 // phone manufacturers
-let phoneManufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+var phoneManufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
 document.write("<h2>Phone Manufacturers:</h2>"+"<select>");
 for(var i = 0; i < phoneManufacturers.length; i++) {
     document.write("<option value='" + phoneManufacturers[i] + "'>" + phoneManufacturers[i] + "</option>");
